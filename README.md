@@ -1,1 +1,1 @@
-# full-stack-mern-blog
+# Full Stack MERN Blog
