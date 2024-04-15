@@ -36,7 +36,7 @@ const Navbar = () => {
                     {/* Create a post */}
                     <Link to="/editor" className="hidden md:flex gap-2 link">
                         <i className="fi fi-rr-file-edit"></i>
-                        <p>Write</p>
+                        <p>Write Post</p>
                     </Link>
 
                     {/* Sign In */}
