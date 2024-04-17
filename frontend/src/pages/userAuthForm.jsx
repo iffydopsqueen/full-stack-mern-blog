@@ -13,10 +13,25 @@ const UserAuthForm = ({ type }) => {
                     <InputBox 
                         name="fullname"
                         type="text"
-                        placeholder="full name"
+                        placeholder="Full Name"
+                        icon="fi-ss-user"
                     /> 
                     : ""
                 }
+
+                <InputBox 
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    icon="fi-sr-envelope"
+                />
+
+                <InputBox 
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    icon="fi-sr-lock"
+                />
             </form>
         </section>
     )
