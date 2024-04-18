@@ -4,6 +4,7 @@ import "dotenv/config";
 import bcrypt from "bcrypt";
 import { nanoid } from "nanoid";
 import jwt from "jsonwebtoken";
+import cors from "cors";
 
 // Schemas 
 import User from "./Schema/User.js";
@@ -17,6 +18,9 @@ let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/; // regex for pass
 
 // Now the server accepts JSON data from frontend
 app.use(express.json());
+
+// now the server accepts data from any port
+app.use(cors());
 
 // Connect to database 
 mongoose.connect(process.env.DB_CONNECTION, {

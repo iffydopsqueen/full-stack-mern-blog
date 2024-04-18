@@ -15,12 +15,12 @@ const InputBox = ({ name, type, id, value, placeholder, icon }) => {
                 className="input-box"
             />
             {/* render the icons beside the placeholder dynamically */}
-            <i class={"fi " + icon + " input-icon"}></i>
+            <i className={"fi " + icon + " input-icon"}></i>
 
             {/* add the hide & show icon for password  */}
             {
                 type == "password" ? 
-                <i class={"fi fi-sr-eye" + (!passwordVisible ? "-crossed" : "") + " input-icon left-[auto] right-4 cursor-pointer"} onClick={() => setpasswordVisible(currentVal => !currentVal)}></i>
+                <i className={"fi fi-sr-eye" + (!passwordVisible ? "-crossed" : "") + " input-icon left-[auto] right-4 cursor-pointer"} onClick={() => setpasswordVisible(currentVal => !currentVal)}></i>
                 : ""
             }
         </div>
